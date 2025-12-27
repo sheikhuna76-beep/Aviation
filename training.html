@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Training | Sky-Bound Vision | ICAO Certified Aviation Excellence</title>
+    <title>Flight Training | Sky-Bound Vision | Professional Pilot Training</title>
    <link rel="stylesheet" href="style.css">
+   
+     
+    
 </head>
 <body>
     <!-- Header -->
@@ -32,57 +35,63 @@
         </div>
     </header>
 
-    <!-- Page Hero -->
+    <!-- Hero Section -->
     <section class="page-hero">
         <div class="container page-hero-content">
             <h1>Launch Your Aviation Career</h1>
             <p>Join our world-renowned flight academy and learn from experienced instructors. We offer comprehensive training programs from Private Pilot License (PPL) to Airline Transport Pilot License (ATPL).</p>
-            <a href="#programs" class="btn">Explore Programs</a>
-        </div>
-    </section>
-
-    <!-- Training Stats -->
-    <section class="training-stats">
-        <div class="container stats-container">
-            <div class="stat-item">
-                <div class="stat-number">10,000+</div>
-                <div class="stat-label">Pilots Trained</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">First-Time Pass Rate</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Training Aircraft</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Job Placement Assistance</div>
+            <div class="hero-buttons">
+                <a href="#programs" class="btn">Explore Programs</a>
+                <a href="#application" class="btn btn-outline">Apply Now</a>
             </div>
         </div>
     </section>
 
-    <!-- Training Categories Navigation -->
+    <!-- Training Navigation -->
     <div class="training-nav">
         <div class="container training-nav-container">
-            <div class="training-nav-item active" data-target="programs">Training Programs</div>
+            <div class="training-nav-item active" data-target="stats">Training Stats</div>
+            <div class="training-nav-item" data-target="programs">Training Programs</div>
             <div class="training-nav-item" data-target="pathway">Career Pathway</div>
             <div class="training-nav-item" data-target="simulators">Simulators</div>
-            <div class="training-nav-item" data-target="instructors">Instructors</div>
             <div class="training-nav-item" data-target="application">Apply Now</div>
         </div>
     </div>
+
+    <!-- Training Stats -->
+    <section class="training-stats" id="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Pilots Trained</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">First-Time Pass Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Training Aircraft</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Job Placement Assistance</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Training Programs -->
     <section class="training-programs" id="programs">
         <div class="container">
             <div class="section-title">
                 <h2>Flight Training Programs</h2>
-                <p>Comprehensive training programs designed to take you from beginner to airline pilot</p>
+                <p>Comprehensive training programs designed to take you from beginner to airline pilot with state-of-the-art equipment and experienced instructors</p>
             </div>
             
             <div class="programs-grid">
+                <!-- PPL Program -->
                 <div class="program-card">
                     <div class="program-header">
                         <div class="program-icon">
@@ -111,15 +120,16 @@
                         
                         <ul class="program-features">
                             <li>Basic flight maneuvers</li>
-                            <li>Navigation & weather</li>
+                            <li>Navigation & weather training</li>
                             <li>Emergency procedures</li>
-                            <li>Night flying</li>
+                            <li>Night flying certification</li>
                         </ul>
                         
-                        <a href="#application" class="btn">Start PPL Training</a>
+                        <a href="#application" class="btn" style="width: 100%;">Start PPL Training</a>
                     </div>
                 </div>
                 
+                <!-- CPL Program -->
                 <div class="program-card">
                     <div class="program-header">
                         <div class="program-icon">
@@ -147,16 +157,17 @@
                         <p>Become a professional pilot with our Commercial Pilot License program. Train for a career in aviation with our comprehensive curriculum.</p>
                         
                         <ul class="program-features">
-                            <li>Advanced maneuvers</li>
+                            <li>Advanced flight maneuvers</li>
                             <li>Complex aircraft training</li>
                             <li>Multi-engine endorsement</li>
-                            <li>Commercial operations</li>
+                            <li>Commercial operations training</li>
                         </ul>
                         
-                        <a href="#application" class="btn">Start CPL Training</a>
+                        <a href="#application" class="btn" style="width: 100%;">Start CPL Training</a>
                     </div>
                 </div>
                 
+                <!-- ATPL Program -->
                 <div class="program-card">
                     <div class="program-header">
                         <div class="program-icon">
@@ -184,26 +195,30 @@
                         <p>Reach the pinnacle of aviation with our Airline Transport Pilot program. Prepare for a career as an airline captain with our advanced training.</p>
                         
                         <ul class="program-features">
-                            <li>Airline operations</li>
-                            <li>Advanced simulators</li>
+                            <li>Airline operations training</li>
+                            <li>Advanced simulator sessions</li>
                             <li>Crew resource management</li>
                             <li>Guaranteed airline interview</li>
                         </ul>
                         
-                        <a href="#application" class="btn">Start ATPL Training</a>
+                        <a href="#application" class="btn" style="width: 100%;">Start ATPL Training</a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Additional Ratings -->
-            <div class="section-title" style="margin-top: 80px;">
+        </div>
+    </section>
+
+    <!-- Additional Ratings -->
+    <section class="training-programs" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
                 <h2>Additional Ratings & Endorsements</h2>
-                <p>Specialized training to enhance your pilot qualifications</p>
+                <p>Specialized training to enhance your pilot qualifications and career opportunities</p>
             </div>
             
             <div class="programs-grid">
                 <div class="program-card">
-                    <div class="program-header" style="background-color: var(--secondary-blue);">
+                    <div class="program-header" style="background: linear-gradient(135deg, var(--secondary-blue), #2a8bd6);">
                         <div class="program-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
@@ -212,59 +227,62 @@
                     <div class="program-content">
                         <p>Learn to fly solely by reference to instruments in IMC conditions.</p>
                         <ul class="program-features">
-                            <li>IFR procedures</li>
-                            <li>Approach plates</li>
-                            <li>Simulator training</li>
-                            <li>Cross-country IFR</li>
+                            <li>IFR procedures and regulations</li>
+                            <li>Approach plate interpretation</li>
+                            <li>Simulator training sessions</li>
+                            <li>Cross-country IFR flights</li>
                         </ul>
                         <div class="program-detail">
                             <span class="detail-label">Cost:</span>
                             <span>$8,500</span>
                         </div>
+                        <a href="#application" class="btn" style="width: 100%; margin-top: 20px;">Add IR Rating</a>
                     </div>
                 </div>
                 
                 <div class="program-card">
-                    <div class="program-header" style="background-color: var(--secondary-blue);">
+                    <div class="program-header" style="background: linear-gradient(135deg, var(--secondary-blue), #2a8bd6);">
                         <div class="program-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <h3>Multi-Engine</h3>
+                        <h3>Multi-Engine Rating</h3>
                     </div>
                     <div class="program-content">
                         <p>Add multi-engine privileges to your pilot certificate.</p>
                         <ul class="program-features">
                             <li>Engine-out procedures</li>
-                            <li>Performance charts</li>
-                            <li>Complex systems</li>
+                            <li>Performance calculations</li>
+                            <li>Complex systems operation</li>
                             <li>Emergency procedures</li>
                         </ul>
                         <div class="program-detail">
                             <span class="detail-label">Cost:</span>
                             <span>$4,500</span>
                         </div>
+                        <a href="#application" class="btn" style="width: 100%; margin-top: 20px;">Add ME Rating</a>
                     </div>
                 </div>
                 
                 <div class="program-card">
-                    <div class="program-header" style="background-color: var(--secondary-blue);">
+                    <div class="program-header" style="background: linear-gradient(135deg, var(--secondary-blue), #2a8bd6);">
                         <div class="program-icon">
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
                         <h3>Flight Instructor</h3>
                     </div>
                     <div class="program-content">
-                        <p>Become a certified flight instructor and build flight hours.</p>
+                        <p>Become a certified flight instructor and build flight hours while teaching.</p>
                         <ul class="program-features">
-                            <li>Teaching techniques</li>
-                            <li>Lesson planning</li>
-                            <li>Student evaluation</li>
-                            <li>FAA requirements</li>
+                            <li>Teaching methodologies</li>
+                            <li>Lesson planning techniques</li>
+                            <li>Student evaluation methods</li>
+                            <li>FAA requirements and testing</li>
                         </ul>
                         <div class="program-detail">
                             <span class="detail-label">Cost:</span>
                             <span>$6,500</span>
                         </div>
+                        <a href="#application" class="btn" style="width: 100%; margin-top: 20px;">Become CFI</a>
                     </div>
                 </div>
             </div>
@@ -286,8 +304,8 @@
                         <h3>Private Pilot License (PPL)</h3>
                         <p>Begin with the fundamentals of flight. Earn your private pilot certificate with 40+ hours of flight training, including solo flights and cross-country navigation.</p>
                         <ul class="program-features">
-                            <li>Medical Certificate</li>
-                            <li>Written Exam</li>
+                            <li>Medical Certificate Class 3</li>
+                            <li>Written Exam Preparation</li>
                             <li>Checkride Preparation</li>
                         </ul>
                     </div>
@@ -299,8 +317,8 @@
                         <h3>Instrument Rating (IR)</h3>
                         <p>Learn to fly in instrument meteorological conditions (IMC). This rating is essential for professional pilots and allows flight in low visibility conditions.</p>
                         <ul class="program-features">
-                            <li>IFR Procedures</li>
-                            <li>Approach Charts</li>
+                            <li>IFR Procedures Mastery</li>
+                            <li>Approach Chart Reading</li>
                             <li>Simulator Training</li>
                         </ul>
                     </div>
@@ -312,7 +330,7 @@
                         <h3>Commercial Pilot License (CPL)</h3>
                         <p>Transition to professional pilot training. Build flight time to 250 hours and learn advanced maneuvers, complex aircraft operations, and commercial regulations.</p>
                         <ul class="program-features">
-                            <li>Complex Aircraft</li>
+                            <li>Complex Aircraft Training</li>
                             <li>Commercial Maneuvers</li>
                             <li>Multi-Engine Training</li>
                         </ul>
@@ -357,65 +375,18 @@
                     <p>Train in our advanced flight simulators that replicate real-world flying conditions with stunning accuracy. Our simulator technology is approved by aviation authorities for flight training credit.</p>
                     
                     <ul class="simulator-features">
-                        <li>Full-motion simulators for realistic training</li>
+                        <li>Full-motion simulators for realistic training experience</li>
                         <li>High-definition visual systems with 220-degree wrap-around screens</li>
                         <li>Accurate replication of various weather conditions</li>
                         <li>Emergency procedure training without risk</li>
                         <li>Type-specific simulators for popular aircraft models</li>
+                        <li>Regular software updates to match real aircraft systems</li>
                     </ul>
                     
                     <a href="#application" class="btn">Schedule Simulator Time</a>
                 </div>
                 <div class="simulator-image">
-                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba5339fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Flight Simulator">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Instructors Section -->
-    <section class="instructors-section" id="instructors">
-        <div class="container">
-            <div class="section-title">
-                <h2>Meet Our Flight Instructors</h2>
-                <p>Learn from experienced professionals with thousands of hours of flight instruction</p>
-            </div>
-            
-            <div class="instructors-grid">
-                <div class="instructor-card">
-                    <div class="instructor-img">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="instructor-info">
-                        <h4>Captain Sarah Mitchell</h4>
-                        <div class="instructor-role">Chief Flight Instructor</div>
-                        <div class="instructor-exp">Former airline captain with 12,000+ flight hours</div>
-                        <p>Specializes in ATPL training and airline preparation. FAA Designated Pilot Examiner.</p>
-                    </div>
-                </div>
-                
-                <div class="instructor-card">
-                    <div class="instructor-img">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="instructor-info">
-                        <h4>Mike Rodriguez</h4>
-                        <div class="instructor-role">Senior CFI</div>
-                        <div class="instructor-exp">8,000+ hours instruction, 500+ students trained</div>
-                        <p>Expert in instrument training and complex aircraft. Instrument Flight Instructor of the Year 2022.</p>
-                    </div>
-                </div>
-                
-                <div class="instructor-card">
-                    <div class="instructor-img">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="instructor-info">
-                        <h4>Jessica Chen</h4>
-                        <div class="instructor-role">Simulator Instructor</div>
-                        <div class="instructor-exp">5,000+ simulator hours, type-rated on 6 aircraft</div>
-                        <p>Specializes in advanced simulator training and emergency procedure instruction.</p>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96" alt="Advanced Flight Simulator">
                 </div>
             </div>
         </div>
@@ -431,7 +402,7 @@
             
             <div class="application-container">
                 <form class="application-form" id="trainingForm">
-                    <h3>Training Application</h3>
+                    <h3>Training Application Form</h3>
                     
                     <div class="form-row">
                         <div class="form-group">
@@ -499,7 +470,7 @@
                         <label for="terms">I agree to the terms and conditions *</label>
                     </div>
                     
-                    <button type="submit" class="btn" style="width: 100%;">Submit Application</button>
+                    <button type="submit" class="btn" style="width: 100%; padding: 18px; font-size: 1.1rem;">Submit Application</button>
                 </form>
             </div>
         </div>
@@ -515,52 +486,12 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer style="background-color: var(--dark-text); color: var(--white); padding: 80px 0 30px;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Sky-Bound Vision</h3>
-                    <p>Your trusted partner in aviation excellence since 1995. Providing world-class services with safety as our top priority.</p>
-                    <div class="contact-info">
-                        <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Aviation Way, Skyport City, AV 10001</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                            <span>training@skyboundvision.com</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="training.html">Flight Training</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Training Programs</h3>
-                    <ul>
-                        <li>Private Pilot License (PPL)</li>
-                        <li>Commercial Pilot License (CPL)</li>
-                        <li>Airline Transport Pilot (ATPL)</li>
-                        <li>Instrument Rating (IR)</li>
-                        <li>Flight Instructor (CFI)</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
+            <div style="text-align: center;">
+                <p style="font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin: 0 auto 30px;">
+                    Your journey to becoming a professional pilot starts here. Contact us today to begin your aviation career.
+                </p>
                 <p>&copy; 2025 Sky-Bound Vision. All rights reserved. | ICAO Certified Aviation Excellence | FAA Approved Flight School</p>
             </div>
         </div>
@@ -586,78 +517,24 @@
             });
         });
         
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
-            }
-        });
-        
         // Training Navigation
         const trainingNavItems = document.querySelectorAll('.training-nav-item');
-        const trainingSections = document.querySelectorAll('.training-programs, .training-pathway, .simulators-section, .instructors-section, .application-section');
+        const trainingSections = document.querySelectorAll('.training-stats, .training-programs, .training-pathway, .simulators-section, .application-section');
         
         trainingNavItems.forEach(item => {
             item.addEventListener('click', function() {
-                // Remove active class from all items
                 trainingNavItems.forEach(navItem => {
                     navItem.classList.remove('active');
                 });
                 
-                // Add active class to clicked item
                 this.classList.add('active');
                 
-                // Get target section
                 const targetId = this.getAttribute('data-target');
                 const targetSection = document.getElementById(targetId);
                 
-                // Scroll to target section
                 if (targetSection) {
                     window.scrollTo({
                         top: targetSection.offsetTop - 120,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Update active nav item on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            trainingSections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 150)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            trainingNavItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('data-target') === current) {
-                    item.classList.add('active');
-                }
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
                 }
@@ -670,67 +547,126 @@
         trainingForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
             const firstName = document.getElementById('firstName').value;
             const program = document.getElementById('program').value;
             
-            // Show success message
             alert(`Thank you, ${firstName}! Your application for ${program} training has been submitted. Our admissions team will contact you within 24 hours.`);
             
-            // Reset form
             trainingForm.reset();
             
-            // Scroll to top of form
             document.getElementById('application').scrollIntoView({ behavior: 'smooth' });
         });
         
-        // Animate program cards on scroll
-        function animateProgramCards() {
-            const programCards = document.querySelectorAll('.program-card');
+        // Scroll animations
+        function animateOnScroll() {
+            // Animate stat items
+            const statItems = document.querySelectorAll('.stat-item, .program-card, .pathway-item, .additional-card');
+            statItems.forEach(item => {
+                const itemPosition = item.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (itemPosition < screenPosition) {
+                    item.classList.add('animate-in');
+                }
+            });
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
+            // Animate simulator content
+            const simulatorText = document.querySelector('.simulators-text');
+            const simulatorImage = document.querySelector('.simulator-image');
             
-            programCards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.5s, transform 0.5s';
-                observer.observe(card);
+            if (simulatorText) {
+                const textPosition = simulatorText.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (textPosition < screenPosition) {
+                    simulatorText.classList.add('animate-in');
+                }
+            }
+            
+            if (simulatorImage) {
+                const imagePosition = simulatorImage.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (imagePosition < screenPosition) {
+                    simulatorImage.classList.add('animate-in');
+                }
+            }
+            
+            // Update active nav item
+            let current = '';
+            trainingSections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 150)) {
+                    current = section.getBoundingClientRect();
+                }
+            });
+            
+            trainingNavItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('data-target') === current) {
+                    item.classList.add('active');
+                }
             });
         }
         
-        // Animate pathway items on scroll
-        function animatePathwayItems() {
-            const pathwayItems = document.querySelectorAll('.pathway-item');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.3 });
-            
-            pathwayItems.forEach(item => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(30px)';
-                item.style.transition = 'opacity 0.5s, transform 0.5s';
-                observer.observe(item);
-            });
-        }
+        // Initialize animations
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
         
-        // Initialize animations when page loads
-        window.addEventListener('DOMContentLoaded', () => {
-            animateProgramCards();
-            animatePathwayItems();
+        // Add hover effect to program cards
+        const programCards = document.querySelectorAll('.program-card');
+        programCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.zIndex = '100';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.zIndex = '1';
+            });
         });
+        
+        // Add ripple effect to buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.7);
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                    width: ${size}px;
+                    height: ${size}px;
+                    top: ${y}px;
+                    left: ${x}px;
+                    pointer-events: none;
+                `;
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+        
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
