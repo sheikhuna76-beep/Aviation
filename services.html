@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Sky-Bound Vision | ICAO Certified Aviation Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles - Keeping Your Original Colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #005288;
+            --secondary-blue: #1a75bb;
+            --accent-gold: #ff9900;
+            --light-bg: #f5f9fc;
+            --dark-text: #1a1a2e;
+            --white: #ffffff;
+            --gray-text: #666;
+            --light-gray: #e8eef3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--accent-gold);
+            color: var(--white);
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #e68a00;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-gold);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 30px auto 0;
+            color: var(--gray-text);
+            font-size: 1.1rem;
+        }
+
+        /* Header & Navigation - With Animation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            animation: slideDown 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            animation: floatLogo 3s ease-in-out infinite;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .logo-subtitle {
+            font-size: 0.8rem;
+            color: var(--secondary-blue);
+            letter-spacing: 1px;
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .current-page {
+            color: var(--accent-gold) !important;
+        }
+
+        .current-page::after {
+            width: 100% !important;
+        }
+
+        /* Page Hero with Parallax Animation */
+        .page-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            text-align: center;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        /* Service Navigation with Animation */
+        .service-nav {
+            background-color: var(--light-bg);
+            padding: 20px 0;
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .service-nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .service-nav-item {
+            padding: 12px 30px;
+            background-color: var(--white);
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 153, 0, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .service-nav-item:hover::before {
+            left: 100%;
+        }
+
+        .service-nav-item:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-nav-item.active {
+            background-color: var(--accent-gold);
+            color: var(--white);
+            border-color: var(--accent-gold);
+            animation: pulseActive 2s infinite;
+        }
+
+        /* Service Cards with Advanced Animations */
+        .service-cards-section {
+            background-color: var(--white);
+            position: relative;
+        }
+
+        .service-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            opacity: 0;
+            transform: translateY(40px) rotateX(5deg);
+        }
+
+        .service-card.animate-in {
+            opacity: 1;
+            transform: translateY(0) rotateX(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px) scale(1.03) rotateX(0);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
+
+        .service-card-icon {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--white);
+            font-size: 2.8rem;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card-icon::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+            top: -50%;
+            left: -50%;
+            transform: rotate(45deg);
+            transition: transform 0.6s;
+        }
+
+        .service-card:hover .service-card-icon::before {
+            transform: rotate(45deg) translate(20px, 20px);
+        }
+
+        .service-card-icon i {
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover .service-card-icon i {
+            transform: scale(1.3) rotate(10deg);
+        }
+
+        .service-card-content {
+            padding: 35px;
+            position: relative;
+        }
+
+        .service-card-content h3 {
+            font-size: 1.6rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-card-content h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            bottom: -8px;
+            left: 0;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover .service-card-content h3::after {
+            width: 100px;
+        }
+
+        .service-card-features {
+            margin-top: 20px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .service-card-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .service-card-features li:last-child {
+            border-bottom: none;
+        }
+
+        .service-card:hover .service-card-features li {
+            padding-left: 8px;
+            transform: translateX(5px);
+        }
+
+        .service-card-features i {
+            color: var(--accent-gold);
+            margin-right: 12px;
+            transition: transform 0.3s;
+        }
+
+        .service-card-features li:hover i {
+            transform: scale(1.3) rotate(10deg);
+        }
+
+        /* Service Detail Sections with Animation */
+        .service-detail {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .service-detail:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .service-text {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-text.animate-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .service-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .service-text h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-gold);
+            bottom: -15px;
+            left: 0;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.8s 0.5s;
+        }
+
+        .service-text.animate-in h2::after {
+            transform: scaleX(1);
+        }
+
+        .service-features {
+            margin: 30px 0;
+        }
+
+        .service-features li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.5s;
+        }
+
+        .service-text.animate-in .service-features li {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .service-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            transition: transform 0.3s;
+        }
+
+        .service-features li:hover::before {
+            transform: scale(1.3);
+        }
+
+        .service-image {
+            opacity: 0;
+            transform: translateX(50px) scale(0.95);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        }
+
+        .service-image.animate-in {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .service-image img {
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.6s;
+        }
+
+        .service-image:hover img {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Fleet Section with 3D Animation */
+        .fleet-section {
+            background-color: var(--light-bg);
+            position: relative;
+        }
+
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            perspective: 1000px;
+        }
+
+        .fleet-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(30px) rotateY(15deg);
+        }
+
+        .fleet-card.animate-in {
+            opacity: 1;
+            transform: translateY(0) rotateY(0);
+        }
+
+        .fleet-card:hover {
+            transform: translateY(-10px) rotateY(0) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* CTA Section with Animation */
+        .services-cta {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            animation: gradientFlow 15s ease infinite;
+            background-size: 200% 200%;
+        }
+
+        .services-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .services-cta .btn {
+            animation: pulseBtn 2s infinite;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes floatLogo {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes pulseActive {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 153, 0, 0);
+            }
+        }
+
+        @keyframes pulseBtn {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes rotateIcon {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .page-hero {
+                background-attachment: scroll;
+            }
+            
+            .service-nav-container {
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            
+            .service-nav-item {
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .service-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .fleet-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-plane logo-icon"></i>
+                <div>
+                    <div class="logo-text">Sky-Bound Vision</div>
+                    <div class="logo-subtitle">ICAO Certified Aviation Excellence</div>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="current-page">Services</a>
+                <a href="training.html">Flight Training</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Complete Aviation Solutions</h1>
+            <p>From charter flights to pilot training, we provide comprehensive aviation services tailored to your specific needs with unmatched safety and professionalism.</p>
+            <a href="#charter" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Service Navigation -->
+    <div class="service-nav">
+        <div class="container service-nav-container">
+            <div class="service-nav-item active" data-target="charter">Charter Flights</div>
+            <div class="service-nav-item" data-target="maintenance">Aircraft Maintenance</div>
+            <div class="service-nav-item" data-target="training">Pilot Training</div>
+            <div class="service-nav-item" data-target="safety">Safety Compliance</div>
+            <div class="service-nav-item" data-target="management">Aircraft Management</div>
+            <div class="service-nav-item" data-target="consulting">Aviation Consulting</div>
+        </div>
+    </div>
+
+    <!-- Service Cards -->
+    <section class="service-cards-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Aviation Services</h2>
+                <p>Comprehensive solutions for all your aviation needs, delivered with the highest standards of safety and professionalism</p>
+            </div>
+            
+            <div class="service-cards-grid">
+                <!-- Charter Flights Card -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Charter Flights</h3>
+                        <p>Premium private charter services for business and leisure travel with unmatched comfort and flexibility.</p>
+                        <ul class="service-card-features">
+                            <li><i class="fas fa-check"></i> On-demand scheduling</li>
+                            <li><i class="fas fa-check"></i> Global destinations</li>
+                            <li><i class="fas fa-check"></i> Luxury amenities</li>
+                            <li><i class="fas fa-check"></i> Concierge service</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Aircraft Maintenance Card -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Aircraft Maintenance</h3>
+                        <p>Comprehensive MRO services with FAA-certified technicians ensuring your aircraft's peak performance.</p>
+                        <ul class="service-card-features">
+                            <li><i class="fas fa-check"></i> FAA-certified technicians</li>
+                            <li><i class="fas fa-check"></i> 24/7 AOG support</li>
+                            <li><i class="fas fa-check"></i> Comprehensive inspections</li>
+                            <li><i class="fas fa-check"></i> Avionics upgrades</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pilot Training Card -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Pilot Training</h3>
+                        <p>World-class flight training programs from PPL to ATPL with state-of-the-art simulators.</p>
+                        <ul class="service-card-features">
+                            <li><i class="fas fa-check"></i> PPL to ATPL programs</li>
+                            <li><i class="fas fa-check"></i> Advanced simulators</li>
+                            <li><i class="fas fa-check"></i> Experienced instructors</li>
+                            <li><i class="fas fa-check"></i> Job placement assistance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charter Flights Detail -->
+    <section class="service-detail" id="charter">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text">
+                    <h2>Premium Charter Flights</h2>
+                    <p>Experience the ultimate in air travel with our premium private charter services. Whether for business or leisure, we provide unmatched comfort, flexibility, and personalized service.</p>
+                    <p>With access to a diverse fleet of aircraft and 50+ global destinations, we can arrange the perfect flight solution for your specific needs.</p>
+                    
+                    <ul class="service-features">
+                        <li>On-demand private flights 24/7</li>
+                        <li>Global network of 50+ destinations</li>
+                        <li>Luxury aircraft with premium amenities</li>
+                        <li>Customized in-flight catering</li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn">Request a Quote</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64" alt="Private Jet Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet-section" id="maintenance">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Maintenance Fleet</h2>
+                <p>State-of-the-art facilities and certified expertise for all your aircraft maintenance needs</p>
+            </div>
+            
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Light Jets</h3>
+                        <p>Comprehensive maintenance for light business jets with quick turnaround times.</p>
+                    </div>
+                </div>
+                
+                <div class="fleet-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Mid-Size Jets</h3>
+                        <p>Expert maintenance for mid-size aircraft with advanced diagnostic capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="fleet-card">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Heavy Jets</h3>
+                        <p>Specialized maintenance for large cabin aircraft with full refurbishment services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+        <div class="container">
+            <h2>Ready to Experience Our Services?</h2>
+            <p>Whether you need a private charter flight, aircraft maintenance, pilot training, or any other aviation service, our team of experts is ready to assist you.</p>
+            <a href="contact.html" class="btn">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--dark-text); color: var(--white); padding: 70px 0 30px;">
+        <div class="container">
+            <div style="text-align: center;">
+                <p>&copy; 2025 Sky-Bound Vision. All rights reserved. | ICAO Certified Aviation Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.createElement('button');
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        menuToggle.style.cssText = `
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+            transition: transform 0.3s;
+        `;
+        
+        document.querySelector('.header-container').appendChild(menuToggle);
+        
+        menuToggle.addEventListener('click', () => {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Show menu toggle on mobile
+        if (window.innerWidth <= 768) {
+            menuToggle.style.display = 'block';
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+            } else {
+                menuToggle.style.display = 'none';
+                document.getElementById('navMenu').classList.remove('active');
+            }
+        });
+
+        // Service Navigation
+        const serviceNavItems = document.querySelectorAll('.service-nav-item');
+        const serviceSections = document.querySelectorAll('.service-detail, .service-cards-section, .fleet-section');
+        
+        serviceNavItems.forEach(item => {
+            item.addEventListener('click', function() {
+                serviceNavItems.forEach(navItem => {
+                    navItem.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+                
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 120,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        function animateOnScroll() {
+            // Animate service cards
+            const serviceCards = document.querySelectorAll('.service-card, .fleet-card');
+            serviceCards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (cardPosition < screenPosition) {
+                    card.classList.add('animate-in');
+                }
+            });
+
+            // Animate service text and images
+            const serviceTexts = document.querySelectorAll('.service-text');
+            const serviceImages = document.querySelectorAll('.service-image');
+            
+            serviceTexts.forEach(text => {
+                const textPosition = text.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (textPosition < screenPosition) {
+                    text.classList.add('animate-in');
+                }
+            });
+            
+            serviceImages.forEach(image => {
+                const imagePosition = image.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (imagePosition < screenPosition) {
+                    image.classList.add('animate-in');
+                }
+            });
+
+            // Update active nav item
+            let current = '';
+            serviceSections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            serviceNavItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('data-target') === current) {
+                    item.classList.add('active');
+                }
+            });
+        }
+
+        // Initialize animations
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Add hover sound effect simulation (visual only)
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.zIndex = '100';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.zIndex = '1';
+            });
+        });
+
+        // Parallax effect for hero
+        const pageHero = document.querySelector('.page-hero');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            pageHero.style.backgroundPosition = `center ${rate}px`;
+        });
+
+        // Add ripple effect to buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.7);
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                    width: ${size}px;
+                    height: ${size}px;
+                    top: ${y}px;
+                    left: ${x}px;
+                    pointer-events: none;
+                `;
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

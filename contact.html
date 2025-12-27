@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sky-Bound Vision | ICAO Certified Aviation Excellence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-plane logo-icon"></i>
+                <div>
+                    <div class="logo-text">Sky-Bound Vision</div>
+                    <div class="logo-subtitle">ICAO Certified Aviation Excellence</div>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="training.html">Flight Training</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="current-page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Get in Touch</h1>
+            <p>We're here to help with all your aviation needs. Whether you have questions about our services, need a quote, or want to start your flight training, our team is ready to assist you.</p>
+            <a href="#contact-form" class="btn">Send a Message</a>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Information</h2>
+                <p>Multiple ways to reach our aviation experts. We're available 24/7 for emergency aircraft services.</p>
+            </div>
+            
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Headquarters</h3>
+                    <p>Our state-of-the-art facility is located at Skyport International Airport with easy access and ample parking.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <strong>Sky-Bound Vision Headquarters</strong><br>
+                                123 Aviation Way, Suite 500<br>
+                                Skyport City, AV 10001<br>
+                                United States
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours:</strong><br>
+                                Monday - Friday: 7:00 AM - 10:00 PM<br>
+                                Saturday: 8:00 AM - 6:00 PM<br>
+                                Sunday: 9:00 AM - 5:00 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our aviation specialists. Different numbers for different services to ensure you reach the right department quickly.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Main Office:</strong><br>
+                                +1 (555) 123-4567
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-plane"></i>
+                            <div>
+                                <strong>Charter Flights:</strong><br>
+                                +1 (555) 123-4568
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <strong>Flight Training:</strong><br>
+                                +1 (555) 123-4569
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <strong>Aircraft Maintenance:</strong><br>
+                                +1 (555) 123-4570
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us an email and we'll respond within 24 hours. For faster response, please include your contact information and specific needs.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>General Inquiries:</strong><br>
+                                info@skyboundvision.com
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-plane"></i>
+                            <div>
+                                <strong>Charter Services:</strong><br>
+                                charter@skyboundvision.com
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <strong>Training Admissions:</strong<br>
+                                training@skyboundvision.com
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <strong>Maintenance:</strong><br>
+                                maintenance@skyboundvision.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-form-map" id="contact-form">
+        <div class="container">
+            <div class="form-map-container">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactFirstName">First Name *</label>
+                                <input type="text" id="contactFirstName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactLastName">Last Name *</label>
+                                <input type="text" id="contactLastName" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="charter">Charter Flight Inquiry</option>
+                                <option value="maintenance">Aircraft Maintenance</option>
+                                <option value="training">Flight Training</option>
+                                <option value="safety">Safety Compliance</option>
+                                <option value="management">Aircraft Management</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" class="form-control" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="contactNewsletter" checked>
+                            <label for="contactNewsletter">Subscribe to our newsletter for aviation updates</label>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="contactTerms" required>
+                            <label for="contactTerms">I agree to the privacy policy and terms of service *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-location-dot"></i>
+                        <h3>Our Location</h3>
+                        <p>Sky-Bound Vision Headquarters<br>
+                        123 Aviation Way, Skyport City, AV 10001</p>
+                        <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                            <i class="fas fa-info-circle"></i> Interactive map would be embedded here
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact by Department</h2>
+                <p>Reach out to the specific department that can best assist with your needs</p>
+            </div>
+            
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h4>Charter Flights</h4>
+                    <p>For private jet charter inquiries, booking requests, and flight planning assistance.</p>
+                    <div class="department-contact">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4568</div>
+                        <div><i class="fas fa-envelope"></i> charter@skyboundvision.com</div>
+                        <div><i class="fas fa-clock"></i> 24/7 Availability</div>
+                    </div>
+                </div>
+                
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>Flight Training</h4>
+                    <p>For training program inquiries, admissions, scheduling, and certification questions.</p>
+                    <div class="department-contact">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4569</div>
+                        <div><i class="fas fa-envelope"></i> training@skyboundvision.com</div>
+                        <div><i class="fas fa-clock"></i> Mon-Fri: 7AM-10PM</div>
+                    </div>
+                </div>
+                
+                <div class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Aircraft Maintenance</h4>
+                    <p>For maintenance scheduling, AOG support, parts inquiries, and technical questions.</p>
+                    <div class="department-contact">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4570</div>
+                        <div><i class="fas fa-envelope"></i> maintenance@skyboundvision.com</div>
+                        <div><i class="fas fa-clock"></i> 24/7 AOG Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about contacting us and our services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your response time for inquiries?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We strive to respond to all inquiries within 24 hours during business days. For charter flight requests and aircraft on ground (AOG) maintenance emergencies, we respond within 2 hours, 24/7.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer international charter services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide international private charter services to over 50 global destinations. Our flight planning team handles all international clearances, customs, and logistics to ensure seamless international travel.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the requirements for flight training?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Basic requirements include being at least 16 years old to solo (17 for license), able to read, speak, and understand English, and passing an FAA medical examination. No previous flight experience is necessary for our PPL program.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I schedule aircraft maintenance?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can schedule maintenance by calling our maintenance hotline at +1 (555) 123-4570 or emailing maintenance@skyboundvision.com. For AOG situations, call our 24/7 emergency line for immediate assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer financing for flight training?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer several financing options for our flight training programs, including payment plans, loans through aviation financing partners, and veterans benefits for eligible candidates. Contact our training department for details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <h2>24/7 Emergency Aircraft Services</h2>
+                <p>For Aircraft on Ground (AOG) situations, immediate maintenance needs, or urgent charter requests, our emergency team is available around the clock.</p>
+                
+                <div class="emergency-number">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-EMER (3637)</span>
+                </div>
+                
+                <p>Our emergency line is staffed by certified aviation professionals who can dispatch maintenance crews, arrange immediate parts delivery, or coordinate emergency charter flights.</p>
+                
+                <a href="tel:+15551233637" class="btn">Call Emergency Line</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sky-Bound Vision</h3>
+                    <p>Your trusted partner in aviation excellence since 1995. Providing world-class services with safety as our top priority.</p>
+                    <div class="contact-info">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Aviation Way, Skyport City, AV 10001</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@skyboundvision.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="training.html">Flight Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Departments</h3>
+                    <ul>
+                        <li>Charter Flights</li>
+                        <li>Aircraft Maintenance</li>
+                        <li>Flight Training</li>
+                        <li>Safety Compliance</li>
+                        <li>Emergency Services</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Sky-Bound Vision. All rights reserved. | ICAO Certified Aviation Excellence | 24/7 Emergency: +1 (555) 123-EMER</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('contactFirstName').value;
+            const subject = document.getElementById('contactSubject').value;
+            
+            // Show success message
+            alert(`Thank you, ${firstName}! Your ${subject} inquiry has been submitted. Our team will respond within 24 hours.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate contact cards on scroll
+        function animateContactCards() {
+            const contactCards = document.querySelectorAll('.contact-info-card, .department-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            contactCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.5s, transform 0.5s';
+                observer.observe(card);
+            });
+        }
+        
+        // Initialize animations when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            animateContactCards();
+        });
+    </script>
+</body>
+</html>
